@@ -15,5 +15,46 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+      <!-- Container -->
+      <div class="container">
+          <h2 class="text-center my-1">Javascript Calculator</h2>
+          <div class="calculator">
+              <div class="row">
+                  <div class="col col-sm-7">
+                      <input type="text" id="result" readonly  >
+                  </div>
+                  <div class="col col-sm-2">
+                      <button class="btn" onclick ="reset()">Clear</button>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col col-sm-2"><button class="btn" onclick="showResult(1)">1</button></div>
+                  <div class="col col-sm-2"><button class="btn" onclick="showResult(2)">2</button></div>
+                  <div class="col col-sm-2"><button class="btn" onclick="showResult(3)">3</button></div>
+                  <div class="col col-sm-2"><button class="btn"onclick="showResult('+')">+</button></div>
+              </div>
+              <div class="row">
+                  <div class="col col-sm-2"><button class="btn" onclick="showResult(4)">4</button></div>
+                  <div class="col col-sm-2"><button class="btn" onclick="showResult(5)">5</button></div>
+                  <div class="col col-sm-2"><button class="btn" onclick="showResult(6)">6</button></div>
+                  <div class="col col-sm-2"><button class="btn"onclick="showResult('-')">-</button></div>
+              </div>
+              <div class="row">
+                  <div class="col col-sm-2"><button class="btn" onclick="showResult(7)">7</button></div>
+                  <div class="col col-sm-2"><button class="btn" onclick="showResult(8)">8</button></div>
+                  <div class="col col-sm-2"><button class="btn" onclick="showResult(9)">9</button></div>
+                  <div class="col col-sm-2"><button class="btn"onclick="showResult('*')">*</button></div>
+              </div>
+              <div class="row">
+                  <div class="col col-sm-2"><button class="btn" onclick="showResult(0)">0</button></div>
+                  <div class="col col-sm-2"><button class="btn"onclick="showResult('.')">.</button></div>
+                  <div class="col col-sm-2"><button class="btn"onclick="computeResult()">=</button></div>
+                  <div class="col col-sm-2"><button class="btn"onclick="showResult('/')">/</button></div>
+              </div>
+          </div>
+      </div>
+      <!-- Add JS here -->
+      <script src="index.js"></script>
+  </body>
 </html>
